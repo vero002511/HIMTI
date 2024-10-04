@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisasi Logo</title>  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #4a90e2, #f5a623);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        nav {
+            background-color: #4a90e2;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+            border-radius: 10%;
+            border: 4px solid #4a90e2;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+            animation: fadeIn 1s ease-in-out; /* Animasi fadeIn */
+        }
+
+        .logo img:hover {
+            transform: rotate(5deg);
+        }
+
+        h1 {
+            color: #4a90e2;
+            margin: 15px 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+            color: #090808;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 0;
+            font-weight: 400;
+        }
+
+        .icon {
+            margin: 10px;
+            font-size: 24px;
+            color: #4a90e2;
+            transition: color 0.3s;
+        }
+
+        .icon:hover {
+            color: #f5a623;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        /* Gaya untuk bagan struktur organisasi */
+        .struktur-bagan, .dokumentasi-bagan {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .bagan {
+            border: 2px solid #4a90e2;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 180px; /* Lebar sedikit lebih besar untuk lebih nyaman */
+            transition: transform 0.3s, box-shadow 0.3s; /* Tambahkan efek transisi */
+            animation: bounce 0.5s ease-in-out; /* Animasi bounce */
+        }
+
+        .bagan:hover {
+            transform: scale(1.05); /* Efek membesar saat hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Tambah bayangan saat hover */
+        }
+
+        .bagan img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10%;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .dokumentasi-bagan img {
+            width: 100%;
+            height: auto;
+            border-radius: 10%;
+        }
+
+        /* Gaya untuk visi dan misi */
+        #visi-misi {
+            margin-top: 20px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out; /* Animasi slideIn */
+        }
+
+        /* Animasi keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Responsive design untuk perangkat kecil */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .logo img {
+                width: 150px;
+            }
+
+            .struktur-bagan, .dokumentasi-bagan {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#visi-misi">Visi & Misi</a>
+        <a href="#struktur">Struktur Organisasi</a>
+        <a href="#dokumentasi">Dokumentasi</a>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="logo">
+            <img src="HIMTI.jpeg" alt="Logo Organisasi"> 
+        </div>
+        <h1>HIMPUNAN MAHASISWA TEKNOLOGI INFORMASI<br> UNIVERSITAS ADIWANGSA JAMBI</h1>
+        <p><b>Selamat datang di Himpunan Mahasiswa Teknologi Informasi!<br> Di sini kami adalah rumah bagi kreativitas, inovasi, dan semangat kolaborasi di bidang teknologi.<br> Bersama kita akan melangkah lebih jauh memajukan pengetahuan dan membangun masa depan digital yang lebih baik.</b></p>
+        <p><b>HIMTI hadir untuk mendukung pengembangan diri setiap anggotanya, <br>Tidak hanya dalam bidang akademik, tapi juga dalam kemampuan teknis, soft skills, dan kepemimpinan. <br>Mari bersatu untuk menciptakan solusi yang inovatif dan bermanfaat bagi masyarakat.</b></p>
+        <p><b>Bergabunglah dengan kami dan jadilah bagian dari perubahan teknologi!</b></p>
+    </div>
+
+    <section id="visi-misi">
+        <h2>Visi dan Misi</h2>
+        <p><strong>Visi:</strong></p>
+        <p>"Menjadi wadah inovasi dan kolaborasi bagi mahasiswa Teknologi Informasi <br>yang berkomitmen untuk menciptakan solusi teknologi yang berdampak positif bagi masyarakat,<br> sekaligus membangun komunitas yang sadar sosial dan berdaya saing tinggi di era digital."</p>
+        
+        <p><strong>Misi:</strong></p>
+        <ul>
+            <p>1.Mengadakan pelatihan dan workshop secara berkala untuk meningkatkan keterampilan teknis dan soft skills anggota dalam bidang Teknologi Informasi.</li>
+            <p>2.Membangun kemitraan dengan industri, akademisi, dan organisasi lain untuk menciptakan peluang kolaborasi yang bermanfaat bagi anggota dan masyarakat.</li>
+            <p>3.Menyelenggarakan kompetisi, hackathon, dan proyek penelitian yang mendorong anggota untuk berinovasi dan menerapkan pengetahuan mereka dalam praktik.</li>
+            <p>4.Mengimplementasikan program pengabdian kepada masyarakat yang memanfaatkan teknologi untuk memecahkan masalah sosial dan meningkatkan kualitas hidup masyarakat.</li>
+            <p>5.Menciptakan lingkungan yang inklusif dan suportif bagi semua anggota, di mana setiap individu dapat berkontribusi, berbagi pengetahuan, dan tumbuh bersama.</li>
+            <p>6.Mengadakan seminar, diskusi, dan kegiatan lain untuk meningkatkan kesadaran anggota dan masyarakat tentang perkembangan teknologi terkini dan dampaknya.</li>
+            <p>7.Memberikan dukungan kepada anggota dalam kegiatan akademik, termasuk penyusunan tugas akhir, penelitian, dan pencarian peluang magang.</li>
+        </ul>
+    </section>
+
+    <section id="struktur">
+        <h2>Struktur Organisasi</h2>
+        <p>Berikut adalah struktur organisasi Himpunan Mahasiswa Teknologi Informasi:</p>
+        <div class="struktur-bagan">
+            <div class="bagan">
+                <h3>Ketua</h3>
+                <img src="ketua.jpg" alt="Foto Ketua" /> 
+                <p>[Nama Ketua]</p>
+            </div>
+            <div class="bagan">
+                <h3>Wakil Ketua</h3>
+                <img src="wakil_ketua.jpg" alt="Foto Wakil Ketua" /> 
+                <p>[Nama Wakil Ketua]</p>
+            </div>
+            <div class="bagan">
+                <h3>Sekretaris</h3>
+                <img src="sekretaris.jpg" alt="Foto Sekretaris" /> 
+                <p>[Nama Sekretaris]</p>
+            </div>
+            <div class="bagan">
+                <h3>Bendahara</h3>
+                <img src="foto.png" alt="Foto Bendahara" /> 
+                <p>[Nama Bendahara]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dokumentasi">
+        <h2>Dokumentasi Kegiatan</h2>
+        <p>Berikut adalah dokumentasi dari kegiatan yang telah dilaksanakan oleh Himpunan Mahasiswa Teknologi Informasi:</p>
+        <div class="dokumentasi-bagan">
+            <div class="bagan">
+                <h3>Kegiatan 1</h3>
+                <img src="foto.png" alt="Foto Kegiatan 1" /> 
+                <p>[Deskripsi Kegiatan 1]</p>
+            </div>
+            <div class="bagan">
+                <h3>Kegiatan 2</h3>
+                <img src="kegiatan2.jpg" alt="Foto Kegiatan 2" /> 
+                <p>[Deskripsi Kegiatan 2]</p>
+            </div>
+            <div class="bagan">
+                <h3>Kegiatan 3</h3>
+                <img src="kegiatan3.jpg" alt="Foto Kegiatan 3" /> 
+                <p>[Deskripsi Kegiatan 3]</p>
+            </div>
+            <div class="bagan">
+                <h3>Kegiatan 4</h3>
+                <img src="kegiatan4.jpg" alt="Foto Kegiatan 4" /> 
+                <p>[Deskripsi Kegiatan 4]</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
